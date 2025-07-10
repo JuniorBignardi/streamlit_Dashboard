@@ -4,9 +4,9 @@ import os
 from glob import glob
 
 
-html_path = "C:\\Users\\wande\\Documents\\Programação\\streamlit-dashboard_veredas\\output\\2025-07-08\\test_sentinel2_gci_2025-07-083.html"
-original_html = "C:\\Users\\wande\\Documents\\Programação\\streamlit-dashboard_veredas\\output\\2025-07-08\\mapa_sentinel2_2025-07-08_naomapeado.html"
-kml_folder = "C:\\Users\\wande\\Documents\\Programação\\streamlit-dashboard_veredas\\kml"
+html_path = "streamlit-dashboard_veredas/output/2025-07-08/test_sentinel2_gci_2025-07-083.html"
+original_html = "streamlit-dashboard_veredas/output/2025-07-08/mapa_sentinel2_2025-07-08_naomapeado.html"
+kml_folder = "streamlit-dashboard_veredas/kml"
 
 st.set_page_config(page_title="Dashboard de Clusterização", layout="wide")
 st.title("Veredas Agronegócios: Clusterizações")
