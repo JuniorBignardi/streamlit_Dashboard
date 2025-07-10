@@ -3,16 +3,16 @@ import streamlit.components.v1 as components
 import os
 from glob import glob
 
-# Caminhos
+
 html_path = "C:\\Users\\wande\\Documents\\Programação\\streamlit-dashboard_veredas\\output\\2025-07-08\\test_sentinel2_gci_2025-07-083.html"
 original_html = "C:\\Users\\wande\\Documents\\Programação\\streamlit-dashboard_veredas\\output\\2025-07-08\\mapa_sentinel2_2025-07-08_naomapeado.html"
-kml_folder = "C:\\Users\\wande\\Documents\\Programação\\streamlit-dashboard_veredas\\kml"  # onde os arquivos .kml são salvos
+kml_folder = "C:\\Users\\wande\\Documents\\Programação\\streamlit-dashboard_veredas\\kml"
 
 st.set_page_config(page_title="Dashboard de Clusterização", layout="wide")
 st.title("Veredas Agronegócios: Clusterizações")
 
 col1, col2 = st.columns(2)
-# --- Mostrar HTML ---
+
 
 with col1:
     st.subheader("🔍 Mapa com Clusterização")
@@ -33,13 +33,12 @@ with col2:
         st.error("Arquivo HTML original não encontrado.")
 
 
-# --- Botão de Atualizar ---
 if st.button("🔄 Atualizar visualização"):
     st.rerun()
 
 st.markdown("---")
 
-# --- Mostrar arquivos KML disponíveis ---
+
 st.subheader("Arquivos KML disponíveis para download")
 
 if os.path.isdir(kml_folder):
